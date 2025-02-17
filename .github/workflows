@@ -22,7 +22,7 @@ jobs:
         run: npm run build # Или yarn build
 
       - name: Export Next.js
-        run: npm run export # Или yarn export (если используете next export)
+        run: npm run build && npm run export # Или yarn export (если используете next export)
                              # Замените на `npm run build && npm run export` если нужно и билдить и экспортировать
 
       - name: Deploy to GitHub Pages
