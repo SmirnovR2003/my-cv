@@ -1,8 +1,8 @@
 // next.config.js
 module.exports = {
     reactStrictMode: true,
-    assetPrefix: '/my-cv', 
-    basePath: '/my-cv',     
+    assetPrefix: '', 
+    basePath: '',     
     trailingSlash: true, 
     images: {
       unoptimized: true, 
