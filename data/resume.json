@@ -1,0 +1,53 @@
+{
+    "name": "Джон Доу",
+    "title": "Full-Stack разработчик",
+    "summary": "Опытный разработчик с более чем 5-летним опытом работы в создании веб-приложений. Увлечен новыми технологиями и стремлюсь к постоянному обучению.",
+    "contact": {
+      "email": "john.doe@example.com",
+      "phone": "+1 555-123-4567",
+      "linkedin": "linkedin.com/in/johndoe",
+      "github": "github.com/johndoe"
+    },
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "HTML",
+      "CSS",
+      "Git",
+      "Docker",
+      "AWS"
+    ],
+    "experience": [
+      {
+        "title": "Старший разработчик",
+        "company": "Acme Corp",
+        "location": "San Francisco, CA",
+        "dates": "2020 - Present",
+        "description": "Руководил разработкой новых функций для основного веб-приложения компании, используя React, Node.js и AWS. Улучшил производительность приложения на 30%."
+      },
+      {
+        "title": "Разработчик",
+        "company": "Beta Inc",
+        "location": "New York, NY",
+        "dates": "2018 - 2020",
+        "description": "Разрабатывал и поддерживал веб-сайты и веб-приложения, используя HTML, CSS, JavaScript и PHP."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Бакалавр компьютерных наук",
+        "university": "MIT",
+        "location": "Cambridge, MA",
+        "dates": "2014 - 2018"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Персональный сайт",
+        "description": "Персональный сайт, созданный с использованием Next.js, демонстрирующий мои навыки и проекты.",
+        "url": "https://johndoe.com"
+      }
+    ]
+  }
