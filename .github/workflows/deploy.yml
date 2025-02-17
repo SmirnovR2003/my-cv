@@ -13,20 +13,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Или другая версия Node.js 
+          node-version: '18'
 
       - name: Install Dependencies
-        run: npm install # Или yarn install
+        run: npm install 
 
       - name: Build Next.js
-        run: npm run build # Или yarn build
+        run: npm run build 
 
       - name: Export Next.js
-        run: npm run build && npm run export # Или yarn export (если используете next export)
-                             # Замените на `npm run build && npm run export` если нужно и билдить и экспортировать
+        run: npm run build && npm run export 
+                             
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Или ./dist, в зависимости от конфигурации next.config.js
+          publish_dir: ./out 
