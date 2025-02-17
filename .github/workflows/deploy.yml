@@ -23,7 +23,9 @@ jobs:
 
       - name: Export Next.js
         run: npm run build && npm run export 
-                             
+                        
+      - name: List files in out directory
+        run: ls -la out   # <--- **ДОБАВЛЕН ЭТОТ ШАГ**     
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
