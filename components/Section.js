@@ -1,4 +1,3 @@
-// components/Section.js
 import styled from 'styled-components';
 
 const SectionContainer = styled.section`

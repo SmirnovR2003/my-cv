@@ -1,4 +1,3 @@
-// components/ContactInfo.js
 import styled from 'styled-components';
 
 const ContactList = styled.ul`

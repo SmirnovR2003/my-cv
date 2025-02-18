@@ -1,4 +1,3 @@
-// components/Skill.js
 import styled from 'styled-components';
 
 const SkillItem = styled.li`
