@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
 
-  workflow_dispatch:
+  workflow_dispatch: # позволяет запускать из гитхаб
 
 permissions:
   contents: read
@@ -16,21 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # клонирование репы
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 # настройка ноды
         with:
           node-version: "20"
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5 # конфигурается github-pages используя next
         with:
           static_site_generator: next
-      - name: Install dependencies
+      - name: Install dependencies 
         run: npm install
       - name: Build with Next.js
         run: npm run build && npm run export
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3 # создание артефакта
         with:
           path: ./out
 
@@ -43,4 +43,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4 # создание страницы
